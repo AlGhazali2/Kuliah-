@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sederhana</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+        }
+        th, td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulir Data Pengguna</h1>
+    
+    <!-- Formulir Input -->
+    <form id="dataForm">
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+        
+        <label for="tanggal_lahir">Tanggal Lahir:</label><br>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir" required><br><br>
+        
+        <label for="Domisili">Domisili:</label><br>
+        <input type="text" id="Domisili" name="Domisili"><br><br>
+        
+        <button type="submit">Kirim</button>
+    </form>
+
+    <!-- Menampilkan Gambar -->
+    <hr>
+    <h2>Gambar</h2>
+    <img src="testing.jpg" alt="Contoh Gambar" width="300">
+
+    <!-- Menampilkan Data dalam Tabel -->
+    <hr>
+    <h2>Data yang Dimasukkan</h2>
+    <table id="dataTable">
+        <tr>
+            <th>Nama</th>
+            <th>Tanggal Lahir</th>
+            <th>Domisili</th>
+        </tr>
+    </table>
+
+    <!-- Menyambungkan file JavaScript eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
